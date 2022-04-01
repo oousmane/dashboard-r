@@ -1,0 +1,121 @@
+---
+title: "Tableau de bord ITCI "
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE, message=FALSE}
+library(flexdashboard)
+source("00-configuration.R")
+source("01-maps.R")
+source("02-boundaries.R")
+source("03-line-charts.R")
+```
+
+
+# Afrique de l'Ouest
+
+Column {data-width=500}
+-------------------------------------
+
+### ITCI, 2021
+
+When you create an account, we remember exactly what you've read, so you always come right back where you left off. You also get notifications, here and via email, whenever someone replies to you. And you can like posts to share the love
+
+```{r, message=FALSE, warning=FALSE,cache=FALSE}
+tm_subregion_map()
+```
+Column {data-width=500}
+-------------------------------------
+
+### ITCI, 16
+
+```{r}
+hc_subregion_lnp()
+```
+
+### ITCI, 2021
+
+```{r}
+hc_subregion_lnp()
+```
+
+# Afrique Centrale
+Column {data-width=500}
+-------------------------------------
+
+### ITCI, 2021
+
+When you create an account, we remember exactly what you've read, so you always come right back where you left off. You also get notifications, here and via email, whenever someone replies to you. And you can like posts to share the love
+
+```{r, message=FALSE, warning=FALSE,cache=FALSE}
+tm_subregion_map(subregion = "Middle Africa")
+```
+
+Column {data-width=500}
+-------------------------------------
+### ITCI, 16
+
+```{r}
+hc_subregion_lnp(subregion = "Middle Africa")
+```
+
+### ITCI, 2021
+
+```{r}
+hc_subregion_lnp(subregion = "Middle Africa")
+```
+
+# Afrique du Nord
+Column {data-width=500}
+-------------------------------------
+
+### ITCI, 2021
+
+When you create an account, we remember exactly what you've read, so you always come right back where you left off. You also get notifications, here and via email, whenever someone replies to you. And you can like posts to share the love
+
+```{r, message=FALSE, warning=FALSE,cache=FALSE}
+tm_subregion_map(subregion = "Northern Africa")
+```
+
+Column {data-width=500}
+-------------------------------------
+### ITCI, 16
+
+```{r}
+hc_subregion_lnp(subregion = "Northern Africa")
+```
+
+### ITCI, 2021
+
+```{r}
+hc_subregion_lnp(subregion = "Northern Africa")
+```
+
+# Afrique Australe
+Column {data-width=500}
+-------------------------------------
+
+### ITCI, 2021
+
+When you create an account, we remember exactly what you've read, so you always come right back where you left off. You also get notifications, here and via email, whenever someone replies to you. And you can like posts to share the love
+
+```{r, message=FALSE, warning=FALSE,cache=FALSE}
+tm_subregion_map(subregion = "Southern Africa")
+```
+
+Column {data-width=500}
+-------------------------------------
+### ITCI, 16
+
+```{r}
+hc_subregion_lnp(subregion = "Southern Africa")
+```
+
+### ITCI, 2021
+
+```{r}
+hc_subregion_lnp(subregion = "Southern Africa")
+```
